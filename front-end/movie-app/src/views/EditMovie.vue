@@ -60,14 +60,7 @@ export default {
         } 
       }
       return false
-    },
-    getProps () {
-      this.newMovie.id = this.props.movie.id
     }
-  },
-  beforeMount () {
-    console.log("mount")
-    this.getProps()
   }
 }
 </script>
