@@ -53,6 +53,11 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    deleteMovie () {
+      console.log("Delete")
+    }
   }
 }
 </script>
