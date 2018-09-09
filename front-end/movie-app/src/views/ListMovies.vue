@@ -8,8 +8,7 @@
           <v-flex xs3>
             <v-img
               :src="movie.imageUrl"
-              contain>              
-            </v-img>
+              contain></v-img>
           </v-flex>
           <v-layout xs9
             align-space-around
@@ -40,12 +39,12 @@ export default {
     return {
       movies: [
         {
-          title:'Título do filme',
+          title: 'Título do filme',
           description: 'Descrição do filme',
           imageUrl: 'http://placekitten.com/300/300'
         },
         {
-          title:'Título do filme',
+          title: 'Título do filme',
           description: 'Descrição do filme',
           imageUrl: 'http://placekitten.com/300/300'
         }
@@ -54,4 +53,3 @@ export default {
   }
 }
 </script>
-
