@@ -23,7 +23,8 @@
             </v-card-title>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn flat color="success">Editar</v-btn>
+              <v-btn flat color="success"
+                @click="$router.push({ name: 'editmovie', params: {movie: movie}})">Editar</v-btn>
               <v-btn flat color="error">Excluir</v-btn>
             </v-card-actions>
           </v-layout>
@@ -39,13 +40,15 @@ export default {
     return {
       movies: [
         {
-          title: 'Título do filme',
-          description: 'Descrição do filme',
+          id: 0,
+          title: 'Filme 1',
+          description: 'Descrição do primeiro filme',
           imageUrl: 'http://placekitten.com/300/300'
         },
         {
-          title: 'Título do filme',
-          description: 'Descrição do filme',
+          id: 1,
+          title: 'Título do filme 2',
+          description: 'Descrição do segundo filme',
           imageUrl: 'http://placekitten.com/300/300'
         }
       ]

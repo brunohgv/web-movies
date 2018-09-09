@@ -14,18 +14,18 @@ export default new Router({
     {
       path: '/listmovies',
       name: 'listmovies',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/ListMovies.vue')
+      component: () => import('./views/ListMovies.vue')
     },
     {
       path: '/addmovie',
       name: 'addmovie',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/AddMovie.vue')
+      component: () => import('./views/AddMovie.vue')
+    },
+    {
+      path: '/editmovie',
+      name: 'editmovie',
+      component: () => import('./views/EditMovie.vue'),
+      props: true
     }
   ]
 })
